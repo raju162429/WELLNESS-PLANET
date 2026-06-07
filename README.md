@@ -1,6 +1,6 @@
 # Project Name
 
-[A modern, responsive web application built for a Gym from where you can see the gym environment and information of that gym]
+A modern, responsive web application built for a Gym from where you can see the Gym environment and information of that Gym.
 
 ---
 
