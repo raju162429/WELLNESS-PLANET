@@ -7,13 +7,19 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "autoprefixer": "^10.5.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "framer-motion": "^12.40.0",
     "lucide-react": "^1.17.0",
+    "mongoose": "^9.6.3",
+    "nodemon": "^3.1.14",
     "postcss": "^8.5.15",
     "react": "^19.2.6",
     "react-countup": "^6.5.3",
@@ -30,5 +36,18 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "vite": "^8.0.12"
-  }
+  },
+  "description": "A modern, responsive web application built for a Gym from where you can see the Gym environment and information of that Gym.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raju162429/WELLNESS-PLANET.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raju162429/WELLNESS-PLANET/issues"
+  },
+  "homepage": "https://github.com/raju162429/WELLNESS-PLANET#readme"
 }

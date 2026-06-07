@@ -107,7 +107,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           <img
             src="Gym-logo.png"
             alt="Wellness Planet Logo"
-            className="w-15 h-15 sm:w-20 sm:h-20 object-contain drop-shadow-[0_0_12px_rgba(249,115,22,0.6)]"
+            className="w-15 h-15 sm:w-20 sm:h-20 object-contain drop-shadow-[0_0_20px_rgba(249,115,22,0.6)]"
           />
           <div className="font-montserrat font-black text-xl sm:text-2xl tracking-tighter text-zinc-900 dark:text-white uppercase">
             WELLNESS <span className="text-orange-500">PLANET</span>
@@ -197,6 +197,8 @@ const Navbar = ({ theme, toggleTheme }) => {
     </nav>
   );
 };
+
+
 
 const Hero = () => {
   return (
@@ -663,7 +665,7 @@ const Testimonials = () => {
 
 const CTA = () => (
   <section className="relative py-24 md:py-32 overflow-hidden text-white px-4 border-y border-orange-500/20">
-    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 z-0">
+    <div className="absolute inset-0 bg-linear-to-r from-orange-600 to-red-600 z-0">
       <div className="absolute inset-0 bg-zinc-950/80 mix-blend-multiply"></div>
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
     </div>
@@ -782,7 +784,7 @@ const Footer = () => {
         <div className="h-48 sm:h-full min-h-48 rounded-xl overflow-hidden bg-zinc-200 dark:bg-white/5 border border-zinc-300 dark:border-white/5">
           <iframe
             title="Location Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114144.57790696347!2d87.20231945!3d26.46083315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef744704331cc5%3A0x7b588ee5c2e1f422!2sBiratnagar%2C%20Nepal!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14286.289590046923!2d87.276641!3d26.469509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7469581cb7cf%3A0xac9ac04a512cb3fe!2sWELLNESS%20PLANET!5e0!3m2!1sen!2snp!4v1780836716732!5m2!1sen!2snp" 
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -802,7 +804,7 @@ const Footer = () => {
 };
 
 export default function App() {
-  const [theme, setTheme] = useState("light"); // Default to dark mode
+  const [theme, setTheme] = useState("dark"); // Default to dark mode
 
   // Load theme from local storage on mount
   useEffect(() => {
