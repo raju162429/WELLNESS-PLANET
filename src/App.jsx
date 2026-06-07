@@ -802,7 +802,7 @@ const Footer = () => {
 };
 
 export default function App() {
-  const [theme, setTheme] = useState("dark"); // Default to dark mode
+  const [theme, setTheme] = useState("light"); // Default to dark mode
 
   // Load theme from local storage on mount
   useEffect(() => {
