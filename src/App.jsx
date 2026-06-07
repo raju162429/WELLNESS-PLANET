@@ -423,11 +423,11 @@ const Facilities = () => {
           {images.map((img, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.75 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="relative h-56 sm:h-64 md:h-80 rounded-2xl overflow-hidden group cursor-pointer shadow-md"
+              className="relative h-56 sm:h-64 md:h-70 rounded-2xl overflow-hidden group cursor-pointer shadow-md"
             >
               <div className="absolute inset-0 bg-zinc-900/60 dark:bg-zinc-950/60 group-hover:bg-zinc-900/20 dark:group-hover:bg-zinc-950/20 transition-colors z-10 mix-blend-multiply"></div>
               <img
