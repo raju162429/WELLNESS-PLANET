@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import BmiCalculator from './components/bmiCalculator';
+import BmiCalculator from "./components/bmiCalculator";
 import {
   Menu,
   X,
@@ -21,7 +21,6 @@ import {
   Moon,
 } from "lucide-react";
 
-// --- CUSTOM ANIMATED COUNTER ---
 const AnimatedCounter = ({ end, duration = 2.5 }) => {
   const [count, setCount] = useState(0);
 
@@ -198,8 +197,6 @@ const Navbar = ({ theme, toggleTheme }) => {
     </nav>
   );
 };
-
-
 
 const Hero = () => {
   return (
@@ -390,9 +387,6 @@ const Features = () => {
     </section>
   );
 };
-
-
-
 
 const Facilities = () => {
   const images = [
@@ -690,8 +684,6 @@ const CTA = () => (
   </section>
 );
 
-
-
 const Footer = () => {
   return (
     <footer
@@ -790,7 +782,7 @@ const Footer = () => {
         <div className="h-48 sm:h-full min-h-48 rounded-xl overflow-hidden bg-zinc-200 dark:bg-white/5 border border-zinc-300 dark:border-white/5">
           <iframe
             title="Location Map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14286.289590046923!2d87.276641!3d26.469509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7469581cb7cf%3A0xac9ac04a512cb3fe!2sWELLNESS%20PLANET!5e0!3m2!1sen!2snp!4v1780836716732!5m2!1sen!2snp" 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14286.289590046923!2d87.276641!3d26.469509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7469581cb7cf%3A0xac9ac04a512cb3fe!2sWELLNESS%20PLANET!5e0!3m2!1sen!2snp!4v1780836716732!5m2!1sen!2snp"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -808,7 +800,7 @@ const Footer = () => {
     </footer>
   );
 };
- 
+
 export default function App() {
   const [theme, setTheme] = useState("dark"); // Default to dark mode
 
