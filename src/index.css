@@ -6,10 +6,8 @@
   --color-accent-blue: #00c2ff;
   --color-accent-gold: #fbbf24;
   --color-gray-custom: #94a3b8;
-  
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
-
   --animate-fade-in: fadeIn 0.5s ease-out forwards;
 
   @keyframes fadeIn {
@@ -17,12 +15,14 @@
       opacity: 0;
       transform: translateY(10px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
 }
+
 @variant dark (&:where(.dark, .dark *));
 
 html {
