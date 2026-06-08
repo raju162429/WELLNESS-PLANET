@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import BmiCalculator from './components/bmiCalculator';
 import {
   Menu,
   X,
@@ -75,7 +76,7 @@ const NavLink = ({ href, onClick, children }) => (
     className="relative font-montserrat font-bold text-sm md:text-xs uppercase tracking-widest text-zinc-800 dark:text-gray-400 hover:text-orange-500 dark:hover:text-orange-500 transition-colors duration-300 group py-1"
   >
     {children}
-    <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
+    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
   </a>
 );
 
@@ -219,7 +220,7 @@ const Hero = () => {
             type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-50 via-zinc-50/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-zinc-50 via-zinc-50/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center w-full">
@@ -230,7 +231,7 @@ const Hero = () => {
           className="font-montserrat font-black text-4xl sm:text-5xl md:text-7xl lg:text-6xl leading-tight mb-6 text-zinc-900 dark:text-white uppercase tracking-tighter"
         >
           BECOME THE{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600 drop-shadow-lg">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-500 to-red-600 drop-shadow-lg">
             STRONGEST
           </span>
           <br /> VERSION OF YOURSELF
@@ -389,6 +390,9 @@ const Features = () => {
     </section>
   );
 };
+
+
+
 
 const Facilities = () => {
   const images = [
@@ -686,6 +690,8 @@ const CTA = () => (
   </section>
 );
 
+
+
 const Footer = () => {
   return (
     <footer
@@ -802,7 +808,7 @@ const Footer = () => {
     </footer>
   );
 };
-
+ 
 export default function App() {
   const [theme, setTheme] = useState("dark"); // Default to dark mode
 
@@ -839,6 +845,7 @@ export default function App() {
       <Memberships />
       <Testimonials />
       <CTA />
+      <BmiCalculator />
       <Footer />
     </div>
   );
